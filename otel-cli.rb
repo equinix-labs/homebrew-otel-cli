@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.6-rc2"
+  version "0.0.7"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.6-rc2/otel-cli-0.0.6-rc2-Darwin-x86_64.tar.gz"
-      sha256 "1612a27b57e18876746592bf1c7e2786354f1b3f8f2a941bb9c735c3a8f775b3"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.7/otel-cli-0.0.7-Darwin-x86_64.tar.gz"
+      sha256 "0ffcf47dca08f12b7126a009a93de4a625e00e33adfc76f02119df476180c614"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.6-rc2/otel-cli-0.0.6-rc2-Darwin-arm64.tar.gz"
-      sha256 "5dfe8160741cca53a829d86318d08eb67d111cfa34d736fb8e520f169aa9f619"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.7/otel-cli-0.0.7-Darwin-arm64.tar.gz"
+      sha256 "2d287594d63677acfc27d6398e7fb6185495ce4784c11f73fc482844aa884513"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.6-rc2/otel-cli-0.0.6-rc2-Linux-x86_64.tar.gz"
-      sha256 "7f228906ad0a3fea78d591d24f1e75c417b9c05b8458be0280b47ce99f334825"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.7/otel-cli-0.0.7-Linux-x86_64.tar.gz"
+      sha256 "d31358e635f4502e2770053b0f8859e19aead4bb6815c73718f52738f44aca4b"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.6-rc2/otel-cli-0.0.6-rc2-Linux-arm64.tar.gz"
-      sha256 "992a19162af0bbc7f6e9502f6e9c0e55d2136caacf42d05b8797c0615ed9dd8d"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.7/otel-cli-0.0.7-Linux-arm64.tar.gz"
+      sha256 "5a505e763cb3cf07bbbe6ca3ce3ac7eaad10a9f5835202ff4ff78aaac2275cd7"
     end
   end
 
