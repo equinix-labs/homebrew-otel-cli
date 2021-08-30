@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.8"
+  version "0.0.13"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.8/otel-cli-0.0.8-Darwin-x86_64.tar.gz"
-      sha256 "c2037ad955d0ca35366bbc4c36aa3d60ff2cd5b7c3aecc762b77d5c0643ee78c"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Darwin-x86_64.tar.gz"
+      sha256 "c6c540ac6390d3229072f8c6fd24449c4044172eccfe494cf7a785ed633bba49"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.8/otel-cli-0.0.8-Darwin-arm64.tar.gz"
-      sha256 "0639cec14d618d6ac488e8fb65dd1f164f992aa4a7aff4e14806c5c29adf64fd"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Darwin-arm64.tar.gz"
+      sha256 "c98d672e0fddc838b9431973b936640f1440f3a2b7e19a3e4f89bfd646d8beb9"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.8/otel-cli-0.0.8-Linux-x86_64.tar.gz"
-      sha256 "b72ee0a68668ad6b9cd9eb300c2f87e0e2d90d906e47c52f30d16d20ddb4c721"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Linux-x86_64.tar.gz"
+      sha256 "1804c3b5e871cc571cb9ca23f7eb24ff021d25e7bfd7f8523930a32235f712a5"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.8/otel-cli-0.0.8-Linux-arm64.tar.gz"
-      sha256 "ad1a11737d7816ec8097995818aada34e171b5295086acf1c53d3441f553d2fd"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Linux-arm64.tar.gz"
+      sha256 "ac34c1186dc5b179c1d2db1862fadc419a44e511038d9ab012c70f23912001f4"
     end
   end
 
