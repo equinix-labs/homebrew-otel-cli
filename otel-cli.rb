@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.13"
+  version "0.0.14"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Darwin-x86_64.tar.gz"
-      sha256 "c6c540ac6390d3229072f8c6fd24449c4044172eccfe494cf7a785ed633bba49"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Darwin-x86_64.tar.gz"
+      sha256 "79457a4092a0db4e35ddd20fcd0b982e89962c006b9356fbef2e94068b50c3ac"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Darwin-arm64.tar.gz"
-      sha256 "c98d672e0fddc838b9431973b936640f1440f3a2b7e19a3e4f89bfd646d8beb9"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Darwin-arm64.tar.gz"
+      sha256 "026aa1b5d880d826bdc7425cd3065a5a7fcff88af4c2dab148f9f80d22541013"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Linux-x86_64.tar.gz"
-      sha256 "1804c3b5e871cc571cb9ca23f7eb24ff021d25e7bfd7f8523930a32235f712a5"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Linux-x86_64.tar.gz"
+      sha256 "3a435c16a9c8534fef11452a1e29c61b1ffc986f6047be59d54d072e0ed87660"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.13/otel-cli-0.0.13-Linux-arm64.tar.gz"
-      sha256 "ac34c1186dc5b179c1d2db1862fadc419a44e511038d9ab012c70f23912001f4"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Linux-arm64.tar.gz"
+      sha256 "189b90dd4c5de7ea0030322006a231f1ea9af829a6bbc81dd4338279ed9b7ab9"
     end
   end
 
