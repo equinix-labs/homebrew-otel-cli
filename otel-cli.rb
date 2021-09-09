@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.14"
+  version "0.0.15"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Darwin-x86_64.tar.gz"
-      sha256 "79457a4092a0db4e35ddd20fcd0b982e89962c006b9356fbef2e94068b50c3ac"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.15/otel-cli-0.0.15-Darwin-x86_64.tar.gz"
+      sha256 "022079a18dcdd90e62831c6586e705b7a7d5811282cb7cbb7b4b540413084ff9"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Darwin-arm64.tar.gz"
-      sha256 "026aa1b5d880d826bdc7425cd3065a5a7fcff88af4c2dab148f9f80d22541013"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.15/otel-cli-0.0.15-Darwin-arm64.tar.gz"
+      sha256 "2a5423ead6a6df90bdb592b5a4d7266c4a9340b20b7c3deb5ed43f735492b1d6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Linux-x86_64.tar.gz"
-      sha256 "3a435c16a9c8534fef11452a1e29c61b1ffc986f6047be59d54d072e0ed87660"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.15/otel-cli-0.0.15-Linux-x86_64.tar.gz"
+      sha256 "1ac32725e3056dcf0116a33a90ab88e338c64ea06b98c6107fceb792a48f79ce"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.14/otel-cli-0.0.14-Linux-arm64.tar.gz"
-      sha256 "189b90dd4c5de7ea0030322006a231f1ea9af829a6bbc81dd4338279ed9b7ab9"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.15/otel-cli-0.0.15-Linux-arm64.tar.gz"
+      sha256 "269721971a4772dc06c4eb986a1c68ffeeb3890db7dc559ed84db2b859fe2055"
     end
   end
 
