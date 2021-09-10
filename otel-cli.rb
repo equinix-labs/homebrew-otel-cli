@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.16"
+  version "0.0.17"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.16/otel-cli-0.0.16-Darwin-x86_64.tar.gz"
-      sha256 "642091d09cea8fac5442a5b6477c84f6942e7858340482de6f8228d8083ad64b"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Darwin-x86_64.tar.gz"
+      sha256 "fe42e87ed912505791707631a33d8f3f10a76107fa21a2026f8263d8e275f13d"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.16/otel-cli-0.0.16-Darwin-arm64.tar.gz"
-      sha256 "9e3cd13c54c2bb073de939a614ab22660d3302ab5be54e176c03c524a522d68a"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Darwin-arm64.tar.gz"
+      sha256 "37e566516652f2e96df1d0e69973818ebbd36ca18f6f1ec5f2f443660f749b6b"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.16/otel-cli-0.0.16-Linux-x86_64.tar.gz"
-      sha256 "8a9de56a851dba4c3ce978c83aa673dcfbe78d9680843182df87a1447c4ed985"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Linux-x86_64.tar.gz"
+      sha256 "52ca7554ea2d85e09de1e8a9a3045831e31de9026936122da92659a2284bd419"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.16/otel-cli-0.0.16-Linux-arm64.tar.gz"
-      sha256 "058a4c769a262e06c09feefcfb1d4b820a2b1b0f050d0ccc7c9db960de16f81a"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Linux-arm64.tar.gz"
+      sha256 "088a56342952a55e0b517b8b493572859f38e392c8f85075ce4e3dbc1ba08dc7"
     end
   end
 
