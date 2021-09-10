@@ -5,29 +5,29 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.0.17"
+  version "0.0.18"
   license "Apache-2.0"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Darwin-x86_64.tar.gz"
-      sha256 "fe42e87ed912505791707631a33d8f3f10a76107fa21a2026f8263d8e275f13d"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.18/otel-cli-0.0.18-Darwin-x86_64.tar.gz"
+      sha256 "7a3a046cc20dcaf7d2353234e548f762b303747dc62f12fa09634c21a880d7e9"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Darwin-arm64.tar.gz"
-      sha256 "37e566516652f2e96df1d0e69973818ebbd36ca18f6f1ec5f2f443660f749b6b"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.18/otel-cli-0.0.18-Darwin-arm64.tar.gz"
+      sha256 "7876b2c2b8b56ef508e36f6843899ce79af59e92ffba9776eb086f3da21f62a6"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Linux-x86_64.tar.gz"
-      sha256 "52ca7554ea2d85e09de1e8a9a3045831e31de9026936122da92659a2284bd419"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.18/otel-cli-0.0.18-Linux-x86_64.tar.gz"
+      sha256 "b9623ef0afa5f51d09c53d475916835cd3bb1f0beb68357558c3c4220d953a33"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.17/otel-cli-0.0.17-Linux-arm64.tar.gz"
-      sha256 "088a56342952a55e0b517b8b493572859f38e392c8f85075ce4e3dbc1ba08dc7"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.0.18/otel-cli-0.0.18-Linux-arm64.tar.gz"
+      sha256 "4fc36d606421116710c509367068f6957037be02a5ec0eb26b30f01832aaa4cf"
     end
   end
 
