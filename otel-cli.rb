@@ -7,7 +7,6 @@ class OtelCli < Formula
   homepage "https://github.com/equinix-labs/otel-cli"
   version "0.0.19"
   license "Apache-2.0"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
