@@ -5,21 +5,21 @@
 class OtelCli < Formula
   desc "OpenTelemetry command-line tool for sending events from shell scripts & similar environments"
   homepage "https://github.com/equinix-labs/otel-cli"
-  version "0.3.0"
+  version "0.4.0"
   license "Apache-2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.3.0/otel-cli_0.3.0_darwin_amd64.tar.gz"
-      sha256 "6ea00bbe18e005341be18c8b366bd091b1190e1ba7311bbcf1456f912ae40f64"
+    if Hardware::CPU.arm?
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.4.0/otel-cli_0.4.0_darwin_arm64.tar.gz"
+      sha256 "7d96bdfdf2ac4b8db3832e3a8ab0711848d34796785611cad899de351cc0e86f"
 
       def install
         bin.install "otel-cli"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.3.0/otel-cli_0.3.0_darwin_arm64.tar.gz"
-      sha256 "f79c523a01ab36cb5378a9c78b23b0fba9f34d749c825a95f9ee54af39a4eff4"
+    if Hardware::CPU.intel?
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.4.0/otel-cli_0.4.0_darwin_amd64.tar.gz"
+      sha256 "52270c3e7864d969d77224c77f2e9c5e569e9a34208eefcb8c2705117950a600"
 
       def install
         bin.install "otel-cli"
@@ -29,16 +29,16 @@ class OtelCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.3.0/otel-cli_0.3.0_linux_arm64.tar.gz"
-      sha256 "e283bbde828c74297e3c86c1571972d29ace833beccc2ff12e013a957ea6e132"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.4.0/otel-cli_0.4.0_linux_arm64.tar.gz"
+      sha256 "8018b200c80e6a3ea0f3448a6adab7c59e1067f3863e2c014889b4bf4792eea4"
 
       def install
         bin.install "otel-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.3.0/otel-cli_0.3.0_linux_amd64.tar.gz"
-      sha256 "a848f79ae30969d04d03f3d3cecdcbafb583a77c3c958987a183d7b117051b48"
+      url "https://github.com/equinix-labs/otel-cli/releases/download/v0.4.0/otel-cli_0.4.0_linux_amd64.tar.gz"
+      sha256 "bc2280521513d31d2779e4118a0ff1217045561047c72ec4cc222cd728997127"
 
       def install
         bin.install "otel-cli"
